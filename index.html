@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="uz">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilhomjon Pardayev | Kiberxavfsizlik Portfoliosi</title>
+    <meta name="description"
+        content="Ilhomjon Pardayevning kiberxavfsizlik portfoliosi. Sertifikatlar va aloqa uchun ma'lumotlar.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Outfit:wght@300;400;600;800&family=Orbitron:wght@400;700;900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrix-canvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <span class="bracket">[</span>IP:127.0.0.1<span class="bracket">]</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Asosiy</a></li>
+            <li><a href="#about">Men Haqimda</a></li>
+            <li><a href="#certificates">Sertifikatlar</a></li>
+            <li><a href="#contact">Aloqa</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2 class="greeting">Tizimga Xush Kelibsiz, men</h2>
+            <h1 class="neon-text" data-text="Ilhomjon Pardayev">Ilhomjon Pardayev</h1>
+            <div class="typewriter-container">
+                <span class="prefix">rooot:~$ </span><span id="typewriter"></span><span class="cursor">_</span>
+            </div>
+            <p class="hero-desc">Raqamli tizimlarni himoya qilish va murakkab kiber hujumlarni aniqlashga
+                ixtisoslashganman.</p>
+            <div class="hero-buttons">
+                <a href="#certificates" class="btn cyber-btn Primary">Sertifikatlarni Ko'rish</a>
+                <a href="#contact" class="btn cyber-btn Ghost">Aloqaga Chiqish</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p class="scroll-text">Pastga Surish</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Haqimda <span>Ma'lumot</span></h2>
+
+            <div class="about-grid">
+                <!-- HUD Scan Element -->
+                <div class="hud-box">
+                    <div class="hud-corner top-left"></div>
+                    <div class="hud-corner top-right"></div>
+                    <div class="hud-corner bottom-left"></div>
+                    <div class="hud-corner bottom-right"></div>
+
+                    <div class="profile-scan">
+                        <!-- Profil rasmi o'rnatildi -->
+                        <i class="fas fa-user-secret profile-icon"></i>
+                        <div class="scan-line"></div>
+                    </div>
+
+                    <div class="hud-stats">
+                        <div class="stat-row">
+                            <span>Holati:</span> <span class="text-green">Faol</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Soha Qamrovi:</span> <span class="text-primary">Red Team / Xavfsizlik</span>
+                        </div>
+                        <div class="stat-row">
+                            <span>Boshlagan Vaqtim:</span> <span class="text-yellow">Noyabr, 2025</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HUD Info Element -->
+                <div class="hud-box info-box">
+                    <div class="hud-corner top-left"></div>
+                    <div class="hud-corner top-right"></div>
+                    <div class="hud-corner bottom-left"></div>
+                    <div class="hud-corner bottom-right"></div>
+
+                    <div class="sys-header">
+                        <i class="fas fa-terminal"></i>
+                        <span>sys_info.sh // BAZA MA'LUMOTI</span>
+                    </div>
+
+                    <div class="bio-text">
+                        <p>Mening ismim Ilhomjon Pardayev. Kiberxavfsizlik sohasiga 2025-yil oxiridan juda katta
+                            qiziqish bilan kirib keldim.</p>
+                        <p>Men Red Teaming, etnik xakerlik va tizim zaifliklarini izlash yo'nalishlarida nazariy hamda
+                            amaliy bilimlar olyapman va dunyo miqyosidagi kuchli sertifikatlarni qo'lga kiritdim.</p>
+                        <p>Hozirda murakkab amaliy loyihalar ustida tajriba orttirmoqdaman.</p>
+                    </div>
+
+                    <div class="skills-radar">
+                        <h4>Asosiy Yo'nalishlar</h4>
+                        <div class="skill-bar">
+                            <span class="skill-name">Penetration Testing</span>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">Web App Security</span>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-bar">
+                            <span class="skill-name">Network Security</span>
+                            <div class="bar-bg">
+                                <div class="bar-fill" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Qo'lga Kiritilgan <span>Sertifikatlar</span></h2>
+
+            <div class="cert-grid">
+
+                <!-- Cert 1: CRTA -->
+                <div class="cyber-cert-card has-image">
+                    <div class="cert-bg-image"
+                        style="background-image: url('assets/Screenshot%202026-03-03%20044247.png');">
+                    </div>
+                    <div class="cert-pattern"></div>
+                    <div class="cert-header">
+                        <i class="fas fa-shield-halved text-red"></i>
+                        <span class="cert-org">CyberWarfare Labs</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>Certified Red Team Analyst</h3>
+                        <div class="cert-code">CRTA</div>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="assets/6961c13846d815f910539775.pdf" target="_blank" class="cyber-link">
+                            <i class="fas fa-file-pdf"></i> PDF Litsenziya
+                        </a>
+                        <a href="https://labs.cyberwarfare.live/credential/achievement/6961c13846d815f910539775"
+                            target="_blank" class="cyber-link verify-link">
+                            <i class="fas fa-fingerprint"></i> Havola orqali
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cert 2: WEB-RTA -->
+                <div class="cyber-cert-card has-image">
+                    <div class="cert-bg-image" style="background-image: url('assets/web-rta.jpg');">
+                    </div>
+                    <div class="cert-pattern"></div>
+                    <div class="cert-header">
+                        <i class="fas fa-spider text-red"></i>
+                        <span class="cert-org">CyberWarfare Labs</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>Certified Web Red Team Analyst</h3>
+                        <div class="cert-code">WEB-RTA</div>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="assets/698b1aad4d24ff2411b02ba8.pdf" target="_blank" class="cyber-link">
+                            <i class="fas fa-file-pdf"></i> PDF Litsenziya
+                        </a>
+                        <a href="https://labs.cyberwarfare.live/credential/achievement/698b1aad4d24ff2411b02ba8"
+                            target="_blank" class="cyber-link verify-link">
+                            <i class="fas fa-fingerprint"></i> Havola orqali
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cert 3: TryHackMe Pre Security -->
+                <div class="cyber-cert-card has-image">
+                    <div class="cert-bg-image" style="background-image: url('assets/photo_2026-03-03_05-06-23.jpg');">
+                    </div>
+                    <div class="cert-pattern"></div>
+                    <div class="cert-header">
+                        <i class="fas fa-shield-alt text-yellow"></i>
+                        <span class="cert-org">TryHackMe</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>Pre Security Path</h3>
+                        <div class="cert-code">THM</div>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="assets/THM-NYDJDDDX1N.pdf" target="_blank" class="cyber-link">
+                            <i class="fas fa-file-pdf"></i> PDF Litsenziya
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cert 4: ISC2 CC -->
+                <div class="cyber-cert-card has-image">
+                    <div class="cert-bg-image" style="background-image: url('assets/photo_2026-03-03_05-03-23.jpg');">
+                    </div>
+                    <div class="cert-pattern"></div>
+                    <div class="cert-header">
+                        <i class="fas fa-certificate text-yellow"></i>
+                        <span class="cert-org">ISC2</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>CC Course Pre-assessment</h3>
+                        <div class="cert-code">COMPLETION</div>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="assets/d5aa2e1b-7334-4d29-a3d7-58413abcdf4c.pdf" target="_blank" class="cyber-link">
+                            <i class="fas fa-file-pdf"></i> PDF Litsenziya
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cert 5: ISC2 CC -->
+                <div class="cyber-cert-card has-image">
+                    <div class="cert-bg-image" style="background-image: url('assets/final.jpg');">
+                    </div>
+                    <div class="cert-pattern"></div>
+                    <div class="cert-header">
+                        <i class="fas fa-certificate text-yellow"></i>
+                        <span class="cert-org">ISC2</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>CC Course Conclusion & Final Assessment</h3>
+                        <div class="cert-code">COMPLETION</div>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="assets/final.pdf" target="_blank" class="cyber-link">
+                            <i class="fas fa-file-pdf"></i> PDF Litsenziya
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cert 6: Cisco Endpoint Security -->
+                <div class="cyber-cert-card has-image">
+                    <div class="cert-bg-image" style="background-image: url('assets/photo_2026-03-03_05-03-49.jpg');">
+                    </div>
+                    <div class="cert-pattern"></div>
+                    <div class="cert-header">
+                        <i class="fas fa-network-wired text-blue"></i>
+                        <span class="cert-org">Cisco Networking Academy</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>Endpoint Security</h3>
+                        <div class="cert-code">SECURITY</div>
+                    </div>
+                    <div class="cert-footer">
+                        <a href="assets/Endpoint_Security_certificate_2300048i_jdu_uz_abf7ab96_8cf5_4205.pdf"
+                            target="_blank" class="cyber-link">
+                            <i class="fas fa-file-pdf"></i> PDF Litsenziya
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cert 7: Cisco Ethical Hacker -->
+                <div class="cyber-cert-card has-image">
+                    <div class="cert-bg-image" style="background-image: url('assets/photo_2026-03-03_05-06-39.jpg');">
+                    </div>
+                    <div class="cert-pattern"></div>
+                    <div class="cert-header">
+                        <i class="fas fa-user-ninja text-blue"></i>
+                        <span class="cert-org">Cisco Networking Academy</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>Ethical Hacker</h3>
+                        <div class="cert-code">HACKING</div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="verified-tag"><i class="fas fa-check-circle"></i> Tasdiqlangan</span>
+                    </div>
+                </div>
+
+                <!-- Cert 8: Cisco Introduction to Cybersecurity -->
+                <div class="cyber-cert-card has-image">
+                    <div class="cert-bg-image" style="background-image: url('assets/photo_2026-03-03_05-06-33.jpg');">
+                    </div>
+                    <div class="cert-pattern"></div>
+                    <div class="cert-header">
+                        <i class="fas fa-server text-blue"></i>
+                        <span class="cert-org">Cisco Networking Academy</span>
+                    </div>
+                    <div class="cert-body">
+                        <h3>Introduction to Cybersecurity</h3>
+                        <div class="cert-code">BASICS</div>
+                    </div>
+                    <div class="cert-footer">
+                        <span class="verified-tag"><i class="fas fa-check-circle"></i> Tasdiqlangan</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Aloqa <span>Tarmog'i</span></h2>
+
+            <div class="contact-terminal">
+                <div class="terminal-bar">
+                    <div class="t-circles">
+                        <div class="t-circle c-red"></div>
+                        <div class="t-circle c-yellow"></div>
+                        <div class="t-circle c-green"></div>
+                    </div>
+                    <div class="t-title">uzb_network.exe</div>
+                </div>
+
+                <div class="terminal-content">
+                    <div class="t-line">
+                        <span class="t-prompt">root@system:~$</span> sh connect_script.sh
+                    </div>
+                    <div class="t-line output">
+                        Initializing secure channels... [OK]<br>
+                        Mening xabardorligim doimo onlayn. Quyidagi uzellar orqali bog'lanishingiz mumkin:
+                    </div>
+
+                    <div class="contact-links-grid">
+                        <a href="https://www.linkedin.com/in/ilhomjon-pardayev-69537a324/" target="_blank"
+                            class="c-node">
+                            <div class="node-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="node-text">
+                                <span class="n-title">LinkedIn</span>
+                                <span class="n-desc">Professional Profil</span>
+                            </div>
+                        </a>
+                        <a href="https://t.me/kamiljanovic17" target="_blank" class="c-node">
+                            <div class="node-icon"><i class="fab fa-telegram-plane"></i></div>
+                            <div class="node-text">
+                                <span class="n-title">Telegram Shaxsiy</span>
+                                <span class="n-desc">@kamiljanovic17</span>
+                            </div>
+                        </a>
+                        <a href="https://t.me/kamiljanovic127" target="_blank" class="c-node">
+                            <div class="node-icon"><i class="fas fa-bullhorn"></i></div>
+                            <div class="node-text">
+                                <span class="n-title">Telegram Kanal</span>
+                                <span class="n-desc">@kamiljanovic127</span>
+                            </div>
+                        </a>
+                        <a href="mailto:ilhombekpardayev@gmail.com" class="c-node">
+                            <div class="node-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="node-text">
+                                <span class="n-title">Elektron Pochta</span>
+                                <span class="n-desc">Xat Yuborish</span>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="t-line mt-3">
+                        <span class="t-prompt">root@system:~$</span> <span class="blinking-cursor">_</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="cyber-footer">
+        <div class="grid-overlay"></div>
+        <p>&copy; 2026 Ilhomjon Pardayev. Barcha huquqlar shifrlangan.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
